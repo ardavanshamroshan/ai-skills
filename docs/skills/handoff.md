@@ -2,7 +2,7 @@
 
 Compact the current conversation into a handoff document for another agent to pick up.
 
-**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · writes to OS temp
+**Type:** prompt-driven · writes to OS temp
 
 ## Install this skill
 
@@ -58,4 +58,4 @@ End of a shaping or investigation phase. Often after [grill-me](/skills/grill-me
 
 ## Related
 
-- [grill-me](/skills/grill-me) · [code-review](/skills/code-review) · Upstream [handoff docs](https://github.com/mattpocock/skills)
+- [grill-me](/skills/grill-me) · [code-review](/skills/code-review)

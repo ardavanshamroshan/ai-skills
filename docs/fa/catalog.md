@@ -4,7 +4,7 @@
 
 روی موبایل کارت‌ها زیر هم می‌آیند. برای جزئیات روی مهارت بزن.
 
-## Matt Pocock / AIHero
+## Engineering & planning
 
 <div class="catalog-grid">
 <a class="catalog-card" href="/fa/skills/code-review">

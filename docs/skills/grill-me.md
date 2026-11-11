@@ -2,7 +2,7 @@
 
 A relentless interview to sharpen a plan or design.
 
-**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · writes nothing
+**Type:** prompt-driven · writes nothing
 
 ## Install this skill
 
@@ -56,9 +56,8 @@ None. No repo required. No CLI.
 
 ## Where it fits
 
-Non-code and early shaping. Sibling: [grill-with-docs](/skills/grill-with-docs). Engine: [grilling](/skills/grilling). After commitment, hand off with [handoff](/skills/handoff) or move into tickets via the Matt Pocock engineering flow (after [setup](/skills/setup-matt-pocock-skills)).
+Non-code and early shaping. Sibling: [grill-with-docs](/skills/grill-with-docs). Engine: [grilling](/skills/grilling). After commitment, hand off with [handoff](/skills/handoff) or move into tickets via the engineering flow (after [setup](/skills/setup-matt-pocock-skills)).
 
 ## Related
 
 - [grilling](/skills/grilling) · [grill-with-docs](/skills/grill-with-docs) · [handoff](/skills/handoff)
-- [AIHero · grill-me](https://www.aihero.dev/skills)

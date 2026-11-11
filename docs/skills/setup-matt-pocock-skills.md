@@ -2,7 +2,7 @@
 
 Set up one repo so the other skills know how it works.
 
-**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · run once per repo
+**Type:** prompt-driven · run once per repo
 
 ## Install this skill
 
@@ -95,4 +95,3 @@ Run-once setup for the engineering flow. Neighbours that read its output: triage
 ## Related
 
 - [grill-me](/skills/grill-me) · [grill-with-docs](/skills/grill-with-docs) · [code-review](/skills/code-review) · [domain-modeling](/skills/domain-modeling)
-- Upstream: [mattpocock/skills](https://github.com/mattpocock/skills) · [AIHero skills](https://www.aihero.dev/skills)

@@ -2,7 +2,6 @@
 
 Build and sharpen a project's domain model — glossary and ADRs as terms and decisions crystallise.
 
-**Source:** [mattpocock/skills](https://github.com/mattpocock/skills)
 
 ## Install this skill
 

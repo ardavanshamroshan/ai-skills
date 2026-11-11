@@ -2,7 +2,7 @@
 
 Shared interview engine behind `/grill-me` and `/grill-with-docs`.
 
-**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · dependency skill
+**Type:** dependency skill
 
 ## Install this skill
 

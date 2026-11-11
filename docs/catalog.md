@@ -6,7 +6,7 @@ Source paths: `~/.agents/skills` and `~/.cursor/skills`.
 
 Cards stack on narrow screens — tap a skill for the full page.
 
-## Matt Pocock / AIHero
+## Engineering & planning
 
 <div class="catalog-grid">
 <a class="catalog-card" href="/skills/code-review">

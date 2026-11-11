@@ -2,7 +2,7 @@
 
 Same relentless interview as `/grill-me`, but it also builds your project's domain model as you go.
 
-**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · writes glossary/ADRs
+**Type:** prompt-driven · writes glossary/ADRs
 
 ## Install this skill
 

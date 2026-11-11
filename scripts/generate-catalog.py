@@ -78,7 +78,7 @@ def main() -> None:
                 }
 
     categories = {
-        "Matt Pocock / AIHero": [
+        "Engineering & planning": [
             "code-review",
             "grill-me",
             "grill-with-docs",

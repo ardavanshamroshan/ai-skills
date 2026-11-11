@@ -18,7 +18,7 @@ features:
     details: Know what installs instructions, what installs executables, and what always-on rules change agent behavior.
     link: /getting-started
   - title: Featured skills
-    details: Context7, deslop/unslop, Matt Pocock grilling & code-review, Playwright, Strix, SkillUI, UI UX Pro Max.
+    details: Context7, deslop/unslop, grilling & code-review, Playwright, Strix, SkillUI, UI UX Pro Max.
     link: /skills/find-docs
   - title: Workflows
     details: UI pipeline, planning/grilling, review cleanup, and research with live docs.

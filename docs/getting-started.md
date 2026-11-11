@@ -1,6 +1,6 @@
 # Getting started
 
-Handbook for **AI agent skills** on this machine — install, when to reach for each one, expected results, and workflows. Skill pages follow the same shape as [AIHero skill docs](https://www.aihero.dev/skills): what it does, when to reach for it, prerequisites, samples, and “it’s working if”.
+Handbook for **AI agent skills** on this machine — install, when to reach for each one, expected results, and workflows. Skill pages cover what it does, when to reach for it, prerequisites, samples, and “it’s working if”.
 
 ## Skill vs executable vs rule
 
@@ -35,7 +35,7 @@ Discover skills: [skills.sh](https://skills.sh/) or `npx skills find <query>`.
 
 1. Start a **new agent chat** so the harness rediscovers skills.
 2. Invoke explicitly (`$name`, `/name`, or “use X”).
-3. For Matt Pocock engineering skills, run `/setup-matt-pocock-skills` once per repo.
+3. For engineering skills in this set, run `/setup-matt-pocock-skills` once per repo.
 
 ## Quick matrix
 
