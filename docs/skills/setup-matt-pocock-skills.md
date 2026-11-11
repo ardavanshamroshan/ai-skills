@@ -90,7 +90,7 @@ Not today. Every repo carries its own `docs/agents/`.
 
 ## Where it fits
 
-Run-once setup for the engineering flow. Neighbours that read its output: triage, to-spec, to-tickets, wayfinder, domain-modeling. For which skill next: ask-matt.
+Run-once setup for the engineering flow. Neighbours that read its output: triage, to-spec, to-tickets, wayfinder, domain-modeling.
 
 ## Related
 
