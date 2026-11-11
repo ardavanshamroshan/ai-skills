@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nextTick, watch } from 'vue'
+import { nextTick, onMounted, watch } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import { useRoute } from 'vitepress'
 import LangTabs from './components/LangTabs.vue'
@@ -9,6 +9,7 @@ const { Layout } = DefaultTheme
 const route = useRoute()
 
 function wrapTables() {
+  if (typeof document === 'undefined') return
   const root = document.querySelector('.vp-doc')
   if (!root) return
   root.querySelectorAll('table').forEach((table) => {
@@ -20,13 +21,20 @@ function wrapTables() {
   })
 }
 
+async function scheduleWrap() {
+  await nextTick()
+  wrapTables()
+}
+
+onMounted(() => {
+  scheduleWrap()
+})
+
 watch(
   () => route.path,
-  async () => {
-    await nextTick()
-    wrapTables()
+  () => {
+    scheduleWrap()
   },
-  { immediate: true },
 )
 
 function onSidebarNavigation(event: MouseEvent) {
