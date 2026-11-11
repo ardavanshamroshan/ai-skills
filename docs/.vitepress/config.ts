@@ -180,6 +180,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: true,
+  appearance: 'dark',
   themeConfig: {
     search: { provider: 'local', options: { detailedView: true } },
   },
@@ -189,7 +190,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: `${base}favicon-16x16.png`, type: 'image/png', sizes: '16x16' }],
     ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png`, sizes: '180x180' }],
-    ['meta', { name: 'theme-color', content: '#f53003' }],
+    ['meta', { name: 'theme-color', content: '#ff6a00' }],
   ],
   markdown: {
     theme: {

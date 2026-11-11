@@ -1,44 +1,43 @@
 /**
- * Docs chrome inspired by system-design (Laravel-style sticky nav + sand surface)
- * Brand palette: original System Design red
+ * Docs chrome — black surfaces + orange brand
  */
 
 :root {
-  --color-sand-light-1: #fdfdfc;
-  --color-sand-light-2: #f9f9f8;
-  --color-sand-light-3: #f1f0ef;
-  --color-sand-light-4: #e9e8e6;
-  --color-sand-light-5: #e2e1de;
-  --color-sand-light-6: #dad9d6;
-  --color-sand-light-7: #cfceca;
-  --color-sand-light-8: #bcbbb5;
-  --color-sand-light-9: #8d8d86;
-  --color-sand-light-10: #82827c;
-  --color-sand-light-11: #63635e;
-  --color-sand-light-12: #21201c;
+  --color-sand-light-1: #fafafa;
+  --color-sand-light-2: #f4f4f5;
+  --color-sand-light-3: #e4e4e7;
+  --color-sand-light-4: #d4d4d8;
+  --color-sand-light-5: #c8c8ce;
+  --color-sand-light-6: #a1a1aa;
+  --color-sand-light-7: #90909a;
+  --color-sand-light-8: #71717a;
+  --color-sand-light-9: #52525b;
+  --color-sand-light-10: #3f3f46;
+  --color-sand-light-11: #27272a;
+  --color-sand-light-12: #0a0a0a;
 
-  --color-sand-dark-1: #111110;
-  --color-sand-dark-2: #191918;
-  --color-sand-dark-3: #222221;
-  --color-sand-dark-4: #2a2a28;
-  --color-sand-dark-5: #31312e;
-  --color-sand-dark-6: #3b3a37;
-  --color-sand-dark-7: #494844;
-  --color-sand-dark-8: #62605b;
-  --color-sand-dark-9: #6f6d66;
-  --color-sand-dark-10: #7c7b74;
-  --color-sand-dark-11: #b5b3ad;
-  --color-sand-dark-12: #eeeeec;
+  --color-sand-dark-1: #000000;
+  --color-sand-dark-2: #0a0a0a;
+  --color-sand-dark-3: #141414;
+  --color-sand-dark-4: #1a1a1a;
+  --color-sand-dark-5: #262626;
+  --color-sand-dark-6: #333333;
+  --color-sand-dark-7: #404040;
+  --color-sand-dark-8: #525252;
+  --color-sand-dark-9: #737373;
+  --color-sand-dark-10: #8a8a8a;
+  --color-sand-dark-11: #d4d4d4;
+  --color-sand-dark-12: #fafafa;
 
-  /* Preserve the original System Design brand palette. */
-  --color-brand: #f53003;
-  --color-brand-2: #c42602;
-  --color-brand-3: #9e1f02;
-  --color-brand-bright: #ff6b49;
+  /* Black + orange brand */
+  --color-brand: #ff6a00;
+  --color-brand-2: #e85d00;
+  --color-brand-3: #c44d00;
+  --color-brand-bright: #ff9a3c;
 
-  --color-code-bg: #f9f9f8;
-  --color-code-chrome: #f1f0ef;
-  --color-code-line-num: #63635e;
+  --color-code-bg: #f4f4f5;
+  --color-code-chrome: #e4e4e7;
+  --color-code-line-num: #52525b;
   --color-code-border: var(--color-sand-light-6);
   --color-code-inner-border: var(--color-sand-light-5);
   --color-code-hover: color-mix(in oklab, #000 6%, transparent);
@@ -101,9 +100,9 @@
 }
 
 .dark {
-  --color-code-bg: #1c1c1a;
-  --color-code-chrome: #111110;
-  --color-code-line-num: #6f6d66;
+  --color-code-bg: #0a0a0a;
+  --color-code-chrome: #000000;
+  --color-code-line-num: #737373;
   --color-code-border: var(--color-sand-dark-5);
   --color-code-inner-border: color-mix(in oklab, var(--color-sand-dark-8) 25%, transparent);
   --color-code-hover: color-mix(in oklab, #fff 8%, transparent);
@@ -1617,7 +1616,7 @@ html[lang='fa-IR'] .vp-doc :not(pre) > code {
   margin-inline-start: 5px;
   padding: 1px 6px;
   border-radius: 999px;
-  background: #c42602;
+  background: var(--color-brand);
   color: #fff;
   font-size: 10px;
   font-weight: 600;
