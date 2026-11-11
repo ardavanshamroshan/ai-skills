@@ -642,144 +642,67 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* Tables: keep real table layout; scroll horizontally on small screens */
+.vp-doc .table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.25rem 0 1.75rem;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 0.5rem;
+}
+
 .vp-doc table {
   border-collapse: collapse;
   width: 100%;
+  min-width: 34rem;
   margin: 1.25rem 0 1.75rem;
-  font-size: 0.8125rem;
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  max-width: 100%;
+  font-size: 0.875rem;
+  table-layout: fixed;
+  display: table;
+}
+
+.vp-doc .table-scroll > table {
+  margin: 0;
+  border: 0;
+  min-width: 36rem;
 }
 
 .vp-doc th,
 .vp-doc td {
   border: 1px solid var(--vp-c-border);
   text-align: left;
-  padding: 0.55rem 0.7rem;
+  padding: 0.65rem 0.8rem;
   vertical-align: top;
-  word-break: break-word;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
 }
 
 .vp-doc th {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-soft);
 }
 
-/* Catalog: responsive cards instead of wide tables */
-.catalog-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
-  margin: 1rem 0 1.75rem;
-}
-
-@media (min-width: 640px) {
-  .catalog-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1100px) {
-  .catalog-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.catalog-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  padding: 0.9rem 1rem;
-  border: 1px solid var(--vp-c-border);
-  border-radius: 0.5rem;
-  background: var(--vp-c-bg-soft);
-  text-decoration: none !important;
-  color: inherit !important;
-  transition: border-color 0.15s ease, background 0.15s ease;
-  min-width: 0;
-}
-
-.catalog-card:hover {
-  border-color: var(--color-brand);
-  background: color-mix(in oklab, var(--color-brand) 8%, var(--vp-c-bg));
-}
-
-.catalog-card__top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.35rem 0.75rem;
-}
-
-.catalog-card__name {
-  font-family: var(--vp-font-family-mono);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-brand) !important;
-  word-break: break-word;
-}
-
-.catalog-card__meta {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--vp-c-text-3);
+/* Catalog columns: skill | description | where */
+.vp-doc table th:nth-child(1),
+.vp-doc table td:nth-child(1) {
+  width: 28%;
   white-space: nowrap;
 }
 
-.catalog-card__desc {
-  margin: 0 !important;
-  font-size: 0.8125rem !important;
-  line-height: 1.45 !important;
-  color: var(--vp-c-text-2) !important;
+.vp-doc table th:nth-child(3),
+.vp-doc table td:nth-child(3) {
+  width: 18%;
+  white-space: nowrap;
 }
 
-/* Stack generic markdown tables on narrow screens */
-@media (max-width: 767px) {
-  .vp-doc table {
-    display: block;
-    width: 100%;
-    border: 0;
-    overflow: visible;
-  }
-
-  .vp-doc thead {
-    display: none;
-  }
-
-  .vp-doc tbody,
-  .vp-doc tr {
-    display: block;
-    width: 100%;
-  }
-
-  .vp-doc tr {
-    margin: 0 0 0.75rem;
-    border: 1px solid var(--vp-c-border);
-    border-radius: 0.5rem;
-    background: var(--vp-c-bg-soft);
-    padding: 0.65rem 0.75rem;
-  }
-
-  .vp-doc td {
-    display: block;
-    border: 0;
-    padding: 0.2rem 0;
-    width: 100% !important;
-  }
-
-  .vp-doc td:first-child {
-    font-weight: 600;
-    color: var(--color-brand);
-    margin-bottom: 0.25rem;
-  }
+.vp-doc table td:nth-child(1) code,
+.vp-doc table td:nth-child(1) a {
+  white-space: nowrap;
 }
 
 .vp-doc blockquote {
@@ -1190,8 +1113,8 @@ body {
 }
 
 .vp-doc {
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .VPDoc .content-container {
