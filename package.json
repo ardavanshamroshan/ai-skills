@@ -1,0 +1,16 @@
+{
+  "name": "ai-skills",
+  "private": true,
+  "type": "module",
+  "description": "Documentation for installed AI agent skills, rules, and workflows",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "catalog": "python3 scripts/generate-catalog.py"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.21"
+  }
+}
