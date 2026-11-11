@@ -186,9 +186,10 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'stylesheet', href: `${base}fonts/fonts.css` }],
+    ['link', { rel: 'icon', href: `${base}logo.svg`, type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: `${base}favicon-32x32.png`, type: 'image/png', sizes: '32x32' }],
     ['link', { rel: 'icon', href: `${base}favicon-16x16.png`, type: 'image/png', sizes: '16x16' }],
-    ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: 'any' }],
+    ['link', { rel: 'shortcut icon', href: `${base}favicon.ico` }],
     ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png`, sizes: '180x180' }],
     ['meta', { name: 'theme-color', content: '#e85d00' }],
   ],
