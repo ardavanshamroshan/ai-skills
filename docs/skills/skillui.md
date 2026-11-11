@@ -1,38 +1,40 @@
-# skillui
+# `skillui`
 
-Extract a complete design system from any website, local directory, or public GitHub repo using the skillui CLI. Generates SKILL.md, DESIGN.md, and token files (colors.json, spacing.json, typography.json) that Claude reads automatically. Use when the user wants to extract a design system or design tokens from an existing site or codebase before building a UI, wants a reference design system to match, or says things like 'extract the design system from', 'get the tokens from', 'pull styles from this site', 'clone the look of', or provides a URL/repo and wants to match its visual language.
+Extract a complete design system from a website, local app, or public GitHub repo.
 
-## Type
+**Source:** skillui CLI · generates `DESIGN.md` + tokens
 
-skill + CLI
-
-## When to use
-
-Invoke with `$skillui`.
-
-## Install
+## Install this skill
 
 ```bash
 npx skills add https://github.com/Roentek/Claude_Code_Boilerplate_Framework --skill skillui -g -y
 ```
 
+CLI usually via `npx skillui` (global install optional).
+
+## What it does
+
+Captures colors, typography, spacing, and related tokens into `DESIGN.md` and JSON token files so another skill or human can reuse the system.
+
+## When to reach for it
+
+Starting from a reference brand or existing product UI before restyling. First step of the [UI pipeline](/workflows/ui-pipeline).
+
 ## Usage samples
 
-> `$skillui` extract the design system from `https://example.com` into `./design-systems/example`.
+> `$skillui` extract the design system from `https://example.com` into `./design-systems/example`. Summarize colors, type, spacing.
 
+```bash
+npx skillui --url https://example.com --out ./design-systems/example
+npx skillui --dir ./my-app --name "My App"
+```
+
+Deeper capture: `--mode ultra --screens 10` (needs Playwright).
 
 ## Expected result
 
-`DESIGN.md` + token JSON files for colors/typography/spacing.
+`DESIGN.md` + `tokens/*.json`. Ask the agent to **read** those files before applying styles.
 
-## Separate CLI?
+## Related
 
-`npx skillui`
-
-## Locations on this machine
-
-`agents, cursor` → typically under `~/.agents/skills/skillui` and/or `~/.cursor/skills/skillui`.
-
-## Links
-
-- _(upstream SKILL.md)_
+- [ui-ux-pro-max](/skills/ui-ux-pro-max) · [playwright-cli](/skills/playwright-cli)

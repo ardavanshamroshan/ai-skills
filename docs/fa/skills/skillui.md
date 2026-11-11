@@ -1,23 +1,5 @@
-# skillui
+# `skillui`
 
-Extract a complete design system from any website, local directory, or public GitHub repo using the skillui CLI. Generates SKILL.md, DESIGN.md, and token files (colors.json, spacing.json, typography.json) that Claude reads automatically. Use when the user wants to extract a design system or design tokens from an existing site or codebase before building a UI, wants a reference design system to match, or says things like 'extract the design system from', 'get the tokens from', 'pull styles from this site', 'clone the look of', or provides a URL/repo and wants to match its visual language.
+Extract a complete design system from a website, local app, or public GitHub repo. **Source:** skillui CLI · generates `DESIGN.md` + tokens
 
-## نوع
-
-skill + CLI
-
-## نصب
-
-جزئیات نصب را در نسخهٔ انگلیسی ببینید: [/skillui](/skills/skillui).
-
-## نمونه استفاده
-
-> `$skillui` extract the design system from `https://example.com` into `./design-systems/example`.
-
-## نتیجهٔ مورد انتظار
-
-`DESIGN.md` + token JSON files for colors/typography/spacing.
-
-## لینک انگلیسی
-
-[English page](/skills/skillui)
+نسخهٔ کامل (نصب، What it does، When، جداول، FAQ): [English](/skills/skillui).

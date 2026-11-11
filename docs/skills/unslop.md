@@ -1,38 +1,35 @@
-# unslop
+# `unslop`
 
-Cut AI tells from any writing.
+Cut AI tells from any writing — docs, UI copy, PR descriptions — while keeping facts.
 
-## Type
+**Source:** [cursor/plugins](https://github.com/cursor/plugins) · explicit invoke
 
-skill
-
-## When to use
-
-Invoke with `$unslop`.
-
-## Install
+## Install this skill
 
 ```bash
 npx skills add https://github.com/cursor/plugins --skill unslop -g -y
 ```
 
+Invoke with `$unslop`.
+
+## What it does
+
+Rewrites prose to remove AI cadence and filler. Does **not** verify facts. You must keep commands, links, versions, and claims intact in the prompt when they matter.
+
+## When to reach for it
+
+README polish, release notes, empty states, PR bodies — after content exists, before publish.
+
 ## Usage samples
 
 > `$unslop` rewrite the introduction of `README.md`. Keep every command, link, version number, and factual claim intact.
 
+> `$unslop` tighten the previous answer without removing technical details.
 
 ## Expected result
 
-Prose without AI tells; facts and commands kept.
+Shorter, plainer prose. Review for dropped facts.
 
-## Separate CLI?
+## Related
 
-none
-
-## Locations on this machine
-
-`agents, cursor` → typically under `~/.agents/skills/unslop` and/or `~/.cursor/skills/unslop`.
-
-## Links
-
-- https://github.com/cursor/plugins
+- [deslop](/skills/deslop) · [workflows/ui-pipeline](/workflows/ui-pipeline)

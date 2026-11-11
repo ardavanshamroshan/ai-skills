@@ -1,38 +1,33 @@
-# deslop
+# `deslop`
 
-Remove AI-generated code slop and clean up code style
+Remove AI-generated code slop and clean up code style without changing behavior.
 
-## Type
+**Source:** [cursor/plugins](https://github.com/cursor/plugins) · explicit invoke
 
-skill
-
-## When to use
-
-Invoke with `$deslop` / “remove AI slop”.
-
-## Install
+## Install this skill
 
 ```bash
 npx skills add https://github.com/cursor/plugins --skill deslop -g -y
 ```
 
+Invoke with `$deslop` or “remove AI slop”.
+
+## What it does
+
+Targets the tells of AI-written code: redundant comments, over-abstraction, filler names, ceremonial wrappers, noise that tooling already covers. Keeps behavior intact.
+
+## When to reach for it
+
+After a generative coding pass, before or after [code-review](/skills/code-review), when a hot path looks “AI-shaped”.
+
 ## Usage samples
 
-> `$deslop` clean this component: remove redundant comments, over-abstraction, and filler naming.
-
+> `$deslop` clean `src/features/billing` — remove redundant comments and over-abstraction; do not change behavior.
 
 ## Expected result
 
-Tighter code with less AI-generated fluff; behavior preserved.
+Leaner code, same tests green, fewer decorative layers.
 
-## Separate CLI?
+## Related
 
-none
-
-## Locations on this machine
-
-`agents, cursor` → typically under `~/.agents/skills/deslop` and/or `~/.cursor/skills/deslop`.
-
-## Links
-
-- https://github.com/cursor/plugins
+- [unslop](/skills/unslop) (prose) · [workflows/review](/workflows/review)

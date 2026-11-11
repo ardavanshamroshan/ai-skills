@@ -1,23 +1,5 @@
-# grill-me
+# `/grill-me`
 
-A relentless interview to sharpen a plan or design.
+A relentless interview to sharpen a plan or design. **Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · writes nothing
 
-## نوع
-
-skill
-
-## نصب
-
-جزئیات نصب را در نسخهٔ انگلیسی ببینید: [/grill-me](/skills/grill-me).
-
-## نمونه استفاده
-
-> /grill-me I want to add multi-tenant billing to this SaaS.
-
-## نتیجهٔ مورد انتظار
-
-Relentless interview rounds that sharpen the plan. Writes no files.
-
-## لینک انگلیسی
-
-[English page](/skills/grill-me)
+نسخهٔ کامل (نصب، What it does، When، جداول، FAQ): [English](/skills/grill-me).

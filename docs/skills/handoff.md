@@ -1,38 +1,61 @@
-# handoff
+# `/handoff`
 
 Compact the current conversation into a handoff document for another agent to pick up.
 
-## Type
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · writes to OS temp
 
-skill
-
-## When to use
-
-Invoke with `/handoff`.
-
-## Install
+## Install this skill
 
 ```bash
-npx skills add mattpocock/skills -g -y -s handoff
+npx skills@latest add mattpocock/skills --skill=handoff
 ```
+
+Then type `/handoff` (optionally with what the next session should focus on).
+
+## What it does
+
+`handoff` turns the conversation into a **portable markdown file** so a fresh agent (or harness, directory, colleague, side task) can continue.
+
+What it gives you is **portability**, not compression. You need a file only when the work has to *travel*. If nothing is travelling, stay in session, use `/clear`, a subagent, or `/compact` instead.
+
+The document lands in the OS temp directory (`$TMPDIR` / `/tmp` / `%TEMP%`) — **not** the workspace. It includes a "suggested skills" section for the next agent. It references existing artifacts by path/URL instead of duplicating them. Secrets and PII are redacted.
+
+## When to reach for it
+
+Invoke with `/handoff`. Not auto-started.
+
+Reach for it when:
+
+- Switching harness (Cursor → Codex, etc.)
+- Forking a side task to another agent
+- Handing work to a colleague's agent session
+- You passed an argument describing the next session's focus
 
 ## Usage samples
 
-> /handoff Compact this session so another agent can continue the payment refactor.
+> `/handoff` Continue the payment refactor; next agent should start with code-review against main.
 
+> `/handoff` Package this grilling outcome for an implementer who has never seen the chat.
 
 ## Expected result
 
-Portable markdown handoff document (typically in OS temp dir).
+One markdown handoff file in temp. Workspace unchanged. Suggested skills listed for the next agent.
 
-## Separate CLI?
+## Prerequisites
 
-none
+None beyond the skill itself. No issue tracker required.
 
-## Locations on this machine
+## It's working if
 
-`agents` → typically under `~/.agents/skills/handoff` and/or `~/.cursor/skills/handoff`.
+- A handoff `.md` exists under the temp directory
+- Specs/ADRs/issues are linked, not pasted wholesale
+- No API keys or passwords appear in the file
+- A cold agent can resume without rereading the whole chat
 
-## Links
+## Where it fits
 
-- https://github.com/mattpocock/skills
+End of a shaping or investigation phase. Often after [grill-me](/skills/grill-me) / [grill-with-docs](/skills/grill-with-docs), before implementation or [code-review](/skills/code-review).
+
+## Related
+
+- [grill-me](/skills/grill-me) · [code-review](/skills/code-review) · Upstream [handoff docs](https://github.com/mattpocock/skills)

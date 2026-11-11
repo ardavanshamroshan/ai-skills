@@ -1,16 +1,10 @@
-# ui-ux-pro-max
+# `ui-ux-pro-max`
 
-UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.
+UI/UX design intelligence for web, mobile, and desktop — hierarchy, spacing, contrast, systems.
 
-## Type
+**Source:** [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 
-skill
-
-## When to use
-
-Invoke with `$ui-ux-pro-max`.
-
-## Install
+## Install this skill
 
 ```bash
 npx ui-ux-pro-max-cli init --ai universal --global
@@ -18,23 +12,31 @@ npx ui-ux-pro-max-cli init --ai universal --global
 uipro init --ai universal --global
 ```
 
+Bundled search script needs Python 3.
+
+## What it does
+
+Searches design knowledge (UX, typography, color, …) and applies coherent recommendations to interfaces you are building or reviewing. Pairs well with tokens from [skillui](/skills/skillui).
+
+## When to reach for it
+
+New landing pages, dashboard hierarchy fixes, mobile layout, design-system application after extraction.
+
 ## Usage samples
 
-> `$ui-ux-pro-max` improve this dashboard hierarchy, spacing, contrast, and mobile layout.
+> `$ui-ux-pro-max` improve this dashboard’s hierarchy, spacing, contrast, and mobile layout. Keep behavior.
 
+> `$ui-ux-pro-max` design a landing page for a finance app — propose color/type/spacing first, then implement.
+
+```bash
+python3 ~/.agents/skills/ui-ux-pro-max/scripts/search.py \
+  "internal analytics dashboard" --design-system -p "Ops Console"
+```
 
 ## Expected result
 
-Design system recommendations and UI changes aligned to UX heuristics.
+Coherent visual direction and concrete UI changes. Verify with [playwright-cli](/skills/playwright-cli).
 
-## Separate CLI?
+## Related
 
-bundled `search.py` (Python 3)
-
-## Locations on this machine
-
-`agents, cursor` → typically under `~/.agents/skills/ui-ux-pro-max` and/or `~/.cursor/skills/ui-ux-pro-max`.
-
-## Links
-
-- https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+- [skillui](/skills/skillui) · [unslop](/skills/unslop) · [workflows/ui-pipeline](/workflows/ui-pipeline)

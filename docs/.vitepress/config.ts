@@ -190,7 +190,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: `${base}favicon-16x16.png`, type: 'image/png', sizes: '16x16' }],
     ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: 'any' }],
     ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png`, sizes: '180x180' }],
-    ['meta', { name: 'theme-color', content: '#ff6a00' }],
+    ['meta', { name: 'theme-color', content: '#e85d00' }],
   ],
   markdown: {
     theme: {
@@ -206,7 +206,7 @@ export default defineConfig({
       title: 'AI Skills',
       description: 'Installed AI agent skills, rules, workflows, and install guides',
       themeConfig: {
-        logo: { light: '/logo.svg', dark: '/logo.svg' },
+        logo: { light: '/images/logo-mark.png', dark: '/images/logo-mark.png' },
         siteTitle: 'AI Skills',
         outline: { label: 'On this page', level: [2, 3] },
         search: { provider: 'local', options: { detailedView: true } },
@@ -226,7 +226,7 @@ export default defineConfig({
       title: 'مهارت‌های AI',
       description: 'مستندات مهارت‌ها، قوانین و گردش‌کارهای ایجنت',
       themeConfig: {
-        logo: { light: '/logo.svg', dark: '/logo.svg' },
+        logo: { light: '/images/logo-mark.png', dark: '/images/logo-mark.png' },
         siteTitle: 'مهارت‌های AI',
         outline: { label: 'در این صفحه', level: [2, 3] },
         search: {

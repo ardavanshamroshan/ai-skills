@@ -1,6 +1,6 @@
 # Getting started
 
-This site documents **AI agent skills** installed for Cursor / Codex-style agents: what they do, how to install them, sample prompts, and expected results.
+Handbook for **AI agent skills** on this machine — install, when to reach for each one, expected results, and workflows. Skill pages follow the same shape as [AIHero skill docs](https://www.aihero.dev/skills): what it does, when to reach for it, prerequisites, samples, and “it’s working if”.
 
 ## Skill vs executable vs rule
 

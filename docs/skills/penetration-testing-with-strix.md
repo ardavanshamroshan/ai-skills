@@ -1,39 +1,48 @@
-# penetration-testing-with-strix
+# `penetration-testing-with-strix`
 
-Pentest a web app, API, codebase, repository, URL, domain, or IP with Strix — autonomous AI penetration testing that exploits and proves vulnerabilities (OWASP Top 10 and beyond — injection, XSS, SSRF, auth/access-control flaws, IDOR, business logic) instead of just flagging them. Runs self-hosted with the open-source CLI or via the managed app.strix.ai cloud, and returns validated findings with proof-of-concept exploits (Markdown, JSON, CSV, SARIF). Use when the user asks to pentest, hack, security-scan, security-audit, or find vulnerabilities in an app, API, website, or repo.
+Authorized autonomous pentest that exploits and proves vulnerabilities with Strix.
 
-## Type
+**Source:** [usestrix/strix](https://github.com/usestrix/strix) · skill + CLI · **only systems you own or may test**
 
-skill + CLI
-
-## When to use
-
-Invoke with `$penetration-testing-with-strix`.
-
-## Install
+## Install this skill
 
 ```bash
 npx skills add usestrix/strix --skill penetration-testing-with-strix -g -y
 pipx install strix-agent
+# or: curl -sSL https://strix.ai/install | bash
 ```
+
+Configure provider env vars in the shell — never paste keys into prompts or commits:
+
+```bash
+export STRIX_LLM="<provider/model>"
+export LLM_API_KEY="<your-provider-key>"
+```
+
+## What it does
+
+Runs Strix against a target (repo, URL, API) to find and **validate** issues with reproduction evidence. Results under `strix_runs/`. Local targets are mounted writable — use a clean checkout.
+
+## When to reach for it
+
+Authorized security assessment of staging or a disposable clone. Not for random third-party sites.
 
 ## Usage samples
 
-> `$penetration-testing-with-strix` quick scan of this local project with a $10 max budget. Report validated findings only.
+> `$penetration-testing-with-strix` quick scan of this local project with a $10 max budget. Report validated findings only. Do not edit code.
 
+```bash
+strix -n -t ./ --scan-mode quick --max-budget 10
+```
 
 ## Expected result
 
-Validated findings under `strix_runs/` — only scan systems you own/authorize.
+Validated findings with repro evidence. Budget respected. No silent code edits when you forbade them.
 
-## Separate CLI?
+## Prerequisites
 
-`strix`
+Docker (typical), LLM provider key, authorization to test the target.
 
-## Locations on this machine
+## Related
 
-`agents, cursor` → typically under `~/.agents/skills/penetration-testing-with-strix` and/or `~/.cursor/skills/penetration-testing-with-strix`.
-
-## Links
-
-- https://github.com/usestrix/strix
+- [workflows/ui-pipeline](/workflows/ui-pipeline) (optional last step) · [Strix docs](https://github.com/usestrix/strix)

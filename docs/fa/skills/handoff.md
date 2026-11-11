@@ -1,23 +1,5 @@
-# handoff
+# `/handoff`
 
-Compact the current conversation into a handoff document for another agent to pick up.
+Compact the current conversation into a handoff document for another agent to pick up. **Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · prompt-driven · writes to OS temp
 
-## نوع
-
-skill
-
-## نصب
-
-جزئیات نصب را در نسخهٔ انگلیسی ببینید: [/handoff](/skills/handoff).
-
-## نمونه استفاده
-
-> /handoff Compact this session so another agent can continue the payment refactor.
-
-## نتیجهٔ مورد انتظار
-
-Portable markdown handoff document (typically in OS temp dir).
-
-## لینک انگلیسی
-
-[English page](/skills/handoff)
+نسخهٔ کامل (نصب، What it does، When، جداول، FAQ): [English](/skills/handoff).
